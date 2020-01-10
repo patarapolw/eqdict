@@ -1,10 +1,11 @@
 {
   "name": "@patarapolw/eqdict",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "license": "MIT",
   "files": [
     "dist",
-    "umd"
+    "umd",
+    "src"
   ],
   "description": "A dictionary / Record / JavaScript object can be generated from a string with Equal (=) sign",
   "main": "dist/index.js",
