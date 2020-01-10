@@ -21,12 +21,21 @@
     "build": "tsc -p src/tsconfig.json",
     "browserify": "parcel build -d umd -o index.min.js ./browser.ts",
     "test": "ts-mocha --paths -p tests/tsconfig.json tests/**/*.spec.ts",
-    "prepack": "yarn build && yarn browserify"
+    "prepack": "yarn lint && yarn test && yarn build && yarn browserify",
+    "lint": "eslint '**'"
   },
   "devDependencies": {
-    "@types/expect": "^24.3.0",
     "@types/js-yaml": "^3.12.1",
     "@types/mocha": "^5.2.7",
+    "@typescript-eslint/eslint-plugin": "^2.15.0",
+    "@typescript-eslint/parser": "^2.15.0",
+    "eslint": ">=6.2.2",
+    "eslint-config-standard": "^14.1.0",
+    "eslint-plugin-import": ">=2.18.0",
+    "eslint-plugin-node": ">=9.1.0",
+    "eslint-plugin-promise": ">=4.2.1",
+    "eslint-plugin-standard": ">=4.0.0",
+    "eslint-plugin-json": "^2.0.1",
     "js-yaml": "^3.13.1",
     "mocha": "^6.0.0",
     "parcel-bundler": "^1.12.4",
