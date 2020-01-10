@@ -15,7 +15,6 @@
     "url": "https://polvcode.dev"
   },
   "repository": "github:patarapolw/git-publisher",
-  "homepage": "https://github.com/patarapolw/git-publisher/tree/master/packages/eqdict",
   "scripts": {
     "prebuild": "yarn lint && yarn test",
     "build": "tsc -p src/tsconfig.json",
